@@ -69,6 +69,30 @@ console.log (empleado)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 const array  = [];
 
