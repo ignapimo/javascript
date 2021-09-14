@@ -55,3 +55,27 @@ resumen.sort ((a,b) =>
 
 
 console.log (resumen);
+
+
+boton1 = document.getElementById ("cargarDatos1")
+
+boton1.addEventListener("click", function(){
+    let nombre = document.getElementById("Nombre").value
+    console.log(nombre)
+})
+
+boton2 = document.getElementById ("cargarDatos2")
+
+boton1.addEventListener("click", function(){
+    let nombre = document.getElementById("tipo").value
+    console.log(nombre)
+})
+
+boton3 = document.getElementById ("cargarDatos3")
+
+boton3.addEventListener("click", function(){
+    let nombre = document.getElementById("urgencia").value
+    console.log(nombre)
+})
+
+
