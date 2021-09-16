@@ -28,7 +28,7 @@ console.log (rendimiento)
 
 
 
-let resumen = [
+let tickets = [
     { ticket: 123, tipo :"mercaderia", prioridad: "alta"},
     { ticket: 254, tipo :"reembolso", prioridad: "reducida"},
     { ticket: 100, tipo :"supervisor", prioridad: "media"},
@@ -38,7 +38,7 @@ let resumen = [
 ]
 
 
-resumen.sort ((a,b) => 
+tickets.sort ((a,b) => 
  {
     if (a.prioridad <b.prioridad) {
         return - 1;
@@ -53,8 +53,8 @@ resumen.sort ((a,b) =>
     
 });
 
+console.log (tickets);
 
-console.log (resumen);
 
 
 boton1 = document.getElementById ("cargarDatos1")
@@ -67,15 +67,42 @@ boton1.addEventListener("click", function(){
 boton2 = document.getElementById ("cargarDatos2")
 
 boton1.addEventListener("click", function(){
-    let nombre = document.getElementById("tipo").value
-    console.log(nombre)
+    let tipo = document.getElementById("tipo").value
+    console.log(tipo)
 })
 
 boton3 = document.getElementById ("cargarDatos3")
 
 boton3.addEventListener("click", function(){
-    let nombre = document.getElementById("urgencia").value
-    console.log(nombre)
+    let urgencia = document.getElementById("urgencia").value
+    console.log(urgencia)
 })
 
 
+
+
+
+let texto2 = document.createElement("p")
+
+texto2.textContent = "Texto agregado desde JS"
+
+document.body.appendChild (texto2)
+
+
+
+console.log (texto2)
+
+
+
+
+
+/*
+
+const days = ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes','Sabado','Domingo']
+
+dayList = document.getElementById("dayList")
+
+for (const day of days) {
+    dayList.innerHTML += `<li>${day}</li>`
+}
+*/
